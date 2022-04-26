@@ -1,0 +1,124 @@
+:root{
+    --color-first: #2c3e50;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }  
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
+}
+header {
+    background-color: #2c3e50;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+}
+main{
+    color: #fff;
+    background-color: #3c6382;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie{
+    position: relative;
+    box-shadow: 1px 1px 3px #000;
+    margin: 1em;
+    width: 330px;
+    display: grid;
+    overflow: hidden;
+}
+/* main .film__box:hover{
+
+} */
+
+.movie .img{
+    width: 100%;
+}
+
+.movie__info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem 1rem;
+    border: solid;
+}
+.movie__info span{
+    padding: 0.25rem 0.25rem;
+    font-weight: 900;
+    background-color: green;
+    border-radius: 4px;
+}
+
+.movie__info h3{
+    margin-top: 0.1rem;
+}
+
+
+.movie__info.green{
+    color: lightgreen;
+}
+.movie__info.orange{
+    color: orange;
+}
+.movie__info.red{
+    color: red;
+}
+
+.overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    color: #000 !important;
+    padding: 1rem;
+/*     max-height: 100%; */
+    transform: translateY(100%);
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+
+/*     font-size: large;
+    color: #000;
+    background-color: #fff;
+    display: grid;
+    text-align: justify;
+    padding: 0.4rem;
+    line-height: 1.3em;
+    position: relative;
+   bottom: 0;
+   top: 0; */
+/* 
+
+.movie__info h3{
+    border: solid yellow;
+    margin-top: 0;  
+}
+} */
