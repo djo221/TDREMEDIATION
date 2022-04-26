@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Roboto:ital,wght@0,300;1,300&family=Rye&family=Syne+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1e272e;
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+header {
+    font-family: 'Mea Culpa', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rye', cursive;
+    font-family: 'Syne Mono', monospace;
+    color: #fff;
+    background-color: #1e272e;
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+header h3{
+    transform: translateX(27%);
+}
+
+.imageContainer {
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    transform: translateY(10%);
+    border-radius: 15px;
+    box-shadow: 1px 1px  4px #000;
+}
+.imageContainer .btn{
+    background-color: #ff4e00;
+    background-image: linear-gradient(315deg, #ff4e00 0%, #ec9f05 74%);
+    color: #dcdde1;
+    top: 50%;
+    padding: 0.6rem;
+    border-radius: 100px;
+    border-style: none;
+    transform: scale(5);
+    margin: 1em;
+    position: fixed;
+    box-shadow: 1px 0 9px #000;
+}
+
+.imageContainer .btn:hover{
+    cursor: pointer;
+/*     transform: scale(2); */
+    color: #dcdde1;
+    top: 50%;
+    padding: 0.6rem;
+    border-radius: 100px; 
+    border-style: none;
+    margin: 1em;
+    position: fixed;
+    box-shadow: 1px 0 4px yellow;
+    font-size: 89%;
+
+ 
+}
+
+.imageContainer .btn-gauche{
+    left: -20%;
+}
+.imageContainer .btn-droite{
+    right: -20%;
+}
+
+.imageContainer img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.droiteLokho{
+    position: fixed;
+    width: 18%;
+    right: -5%;
+    top: 51.6%;
+    transition-duration: 500ms;
+}
+.gaucheLokho{
+    position: fixed;
+    width: 35%;
+    left: -8%;
+    top: 64.6%;
+    transition-duration: 600ms;
+    ;
+}
+/* .droiteLokho{
+    transform: scale(2);
+
+} */
+
+
+/* animation */
+ .droiteLokhoToggle{
+    position: fixed;
+    width: 16%;
+    right: -5%;
+    top: 55.1%;
+    transform: translateX(25%);
+    
+    /* transition-duration: 7000ms; */
+
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;  
+}
+
+
+.gaucheLokhoToggle{
+    position: fixed;
+    left: -16%; 
+   
+    transform: rotateZ(25deg) ;
+    transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: 2000ms;
+}
+
+/*
+.gaucheLokho{
+    position: fixed;
+    width: 25%;
+    left: -6%;
+    top: 65%;
+}
+
+ */
+
+
+ @-webkit-keyframes tada {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes tada {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    10%, 20% {
+    -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+    }
