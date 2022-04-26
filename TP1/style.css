@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --success-color: #00b894;
+    --danger-color: #d63031;
+    --warning-color: #7ee8fa;
+    --info-color: #fce043;
+}
+ body{
+
+ }
+
+.container {
+    background-color: #dfe6e9;
+    height: 100vh;
+    
+}
+
+.button_container {
+    position: absolute;
+    padding: 1em;
+    background-color: white;
+    top: 3em;
+    left: 2em;
+    height: 20vh;
+    display: flex;
+}
+
+.button_container button {
+    padding: 1em;
+    margin: 0.5em;
+    margin-right: 1em;
+    border-radius: 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+    font-weight: 900;
+    border-style: none;
+    color: #fff;
+
+}
+
+.buttonSuccess {
+    background-color: var(--success-color);
+}
+
+.buttonSuccess:hover {
+    background-color: var(--success-color);
+    margin-top: 0.1rem;
+}
+
+.buttonDanger {
+    background-color: var(--danger-color);
+}
+
+.buttonDanger:hover {
+    background-color: var(--danger-color);
+    margin-top: 0.1rem;
+}
+
+.buttonWarning {
+    background-color: var(--warning-color);
+}
+
+.buttonWarning:hover {
+    background-color: var(--warning-color);
+    margin-top: 0.1rem;
+}
+
+.buttonInfo {
+    background-color: var(--info-color);
+}
+
+.buttonInfo:hover {
+    background-color: var(--info-color);
+    margin-top: 0.1rem;
+}
+
+.aside-ntf {
+    position: absolute;
+    right: 0;
+    height: 95%;
+    width: 22%;
+    right: 1.3em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.ntf {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.aside-ntf div {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em;
+    border-radius: 10px;
+    animation-name: boing;
+
+
+    /*******animation*********/
+        -webkit-animation-name: rubberBand;
+        animation-name: rubberBand;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        
+}
+
+@-webkit-keyframes rubberBand {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    }
+    @keyframes rubberBand {
+    0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+    -webkit-transform: scale3d(.95, 1.05, 1);
+    transform: scale3d(.95, 1.05, 1);
+    }
+    75% {
+    -webkit-transform: scale3d(1.05, .95, 1);
+    transform: scale3d(1.05, .95, 1);
+    }
+    100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+    }
+    } 
+  
